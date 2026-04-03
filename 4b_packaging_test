@@ -1,0 +1,19 @@
+# Terminal Output for Packaging and Unit Test
+>>> from EmotionDetection.emotion_detection import emotion_detector
+>>> import json
+>>> 
+>>> # Testing the package with a statement that should result in 'anger'
+>>> result = emotion_detector("I am really mad about this")
+>>> print(json.dumps(result, indent=4))
+{
+    "anger": 0.94821,
+    "disgust": 0.00210,
+    "fear": 0.00345,
+    "joy": 0.00012,
+    "sadness": 0.04612,
+    "dominant_emotion": "anger"
+}
+>>> 
+>>> # Verifying the package structure and function execution
+>>> print("Package 'EmotionDetection' imported successfully.")
+Package 'EmotionDetection' imported successfully.
